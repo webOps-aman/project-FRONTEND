@@ -5,20 +5,20 @@
 }
 .navbar-section{
     border: 1px dashed red;
-    background-color: #17153B;
+    background-color: lightblue;
     
 }
 .navbar-container{
     border: 1px dashed black;
-    background-color: #17153B;   
+    background-color: lightblue;   
 }
 .navbar{
-    background-color: #17153B;
+    background-color: lightblue;
 }
 .navbar-row{
     border: 1px dashed red;
-    background-color: #17153B;
+    background-color: lightblue;
 }
 .navbar-brand, .nav-link{
-    color:#fff !important;
+    color:#000 !important;
 }
