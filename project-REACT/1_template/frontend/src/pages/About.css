@@ -1,0 +1,15 @@
+.about-section{
+    margin-top:2px;
+    background-image: url("../../public/images/background-10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   }  
+   .about-col-image{
+    height:500px;
+   }
+   .about-col-image img {
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}

@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.navbar-section{
+    border: 1px dashed red;
+    background-color: #17153B;
+    
+}
+.navbar-container{
+    border: 1px dashed black;
+    background-color: #17153B;   
+}
+.navbar{
+    background-color: #17153B;
+}
+.navbar-row{
+    border: 1px dashed red;
+    background-color: #17153B;
+}
+.navbar-brand, .nav-link{
+    color:#fff !important;
+}
