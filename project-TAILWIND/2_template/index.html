@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fixed-navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .hidden-info {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- -----header_section start here----- -->
+    <div class="header_section w-[100%] h-[100vh] sm:bg-[url('images/hero-img.jpg')] sm:bg-cover bg-[linear-gradient(to_right,_#DFAC3F,_#FCD87A,_#F9CF6D)]">
+      <!-- -----navbar_info start here----- -->
+      <div id="navbarInfo" class="navbar_info w-[100%] bg-[linear-gradient(to_right,_#DFAC3F,_#FCD87A,_#F9CF6D)]">
+        <div class="navbar_info_area sm:w-[80%] w-[100%] py-2 mx-auto flex justify-between">
+          <div class="sm:inline-flex hidden location w-[60%] flex justify-between">
+            <div class="address flex items-center">
+              <i class="fa-regular fa-map" style="color:#000;"></i><p class="text-black ml-2">Hari Nagar, New Delhi, India</p>
+            </div>
+            <div class="contact flex items-center">
+              <i class="fa-solid fa-phone" style="color: #000;"></i><p class="text-black ml-2">+91 9999728776</p>
+            </div>
+            <div class="mail flex items-center">
+              <i class="fa-solid fa-envelope" style="color: #000;"></i><p class="text-black ml-2">amanhxe@gmail.com</p>
+            </div>
+          </div>
+          <div class="social_icons sm:w-[30%] w-[90%] sm:mx-0 mx-auto flex justify-evenly items-center">
+            <p class="text-black font-semibold">Follow Us On:</p>  
+            <i class="fa-brands fa-facebook-f" style="color: #000;"></i>
+            <i class="fa-brands fa-twitter" style="color: #000;"></i>
+            <i class="fa-brands fa-youtube" style="color: #000;"></i>
+            <i class="fa-brands fa-instagram" style="color: #000;"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: #000;"></i>
+          </div>
+        </div>
+      </div>
+      <!-- -----navbar_info end here----- -->
+
+      <!-- -----navbar start here----- -->
+      <div id="mainNavbar" class="navbar w-[100%] p-2 bg-[linear-gradient(to_right,_#DFAC3F,_#FCD87A,_#F9CF6D)]">
+        <div class="navbar_area sm:w-[80%] w-[100%] mx-auto justify-between flex">
+          <div class="brand_name">
+            <img src="images/logo_5.svg">
+          </div>
+          <div class="nav_items sm:block hidden w-[50%]">
+            <ul class="items flex justify-evenly h-full items-center font-black font-semibold text-lg">
+              <li class='items_list home'><a href="">Home</a></li>
+              <li class='items_list services'><a href="">Services</a></li>
+              <li class='items_list gallery'><a href="">Gallery</a></li>
+              <li class='items_list blog'><a href="">Team</a></li>
+              <li class='items_list about_us'><a href="">Testimonials</a></li>
+              <li class='items_list contact_us'><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="search_bar hidden w-[25%] h-12 sm:flex sm:items-center sm:justify-evenly">
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <input type="text" placeholder="Search..." class="w-[85%] p-2 focus:outline-none bg-transparent placeholder:italic placeholder:text-black">
+          </div>
+          <button class="sm:hidden flex items-center pr-6"><i class="fa-solid fa-bars fa-lg"></i></button>
+        </div>
+      </div>
+      <!-- -----navbar end here----- -->
+
+      <!-- -----header_content start here----- -->
+      <div class="header_content_section w-[100%] sm:h-[86%] h-[79%] sm:mt-0 mt-8">
+        <div class='header_content_area sm:w-[60%] h-[100%] sm:ml-36 sm:flex sm:items-center'>
+          <div class="content w-full sm:h-[45%] h-[100%] sm:flex sm:flex-col sm:justify-between sm:px-0 px-4">
+            <p class="text-black sm:text-xl text-md font-lg sm:text-left text-center sm:pb-0 pb-4">"Let's bring the party vibes this year!"</p>
+            <p class="text-black sm:text-7xl text-2xl font-bold sm:text-left text-center sm:pb-0 pb-4">Shine Through the Night.</p>
+            <p class="text-black sm:text-xl text-md font-semibold sm:text-left sm:pb-0 pb-4">
+              Celebrate in style with a night that sparkles and shines! Let vibrant lights and upbeat music set the scene for an unforgettable party.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- -----header_content end here----- -->
+    </div>
+    <!-- -----header_section end here----- -->
+
+    <!-- -----event_section start here----- -->
+    <div class="w-[100%] h-[100vh]"></div>
+    <!-- -----event_section end here----- -->
+  </div>
+
+  <script>
+    const navbarInfo = document.getElementById("navbarInfo");
+    const mainNavbar = document.getElementById("mainNavbar");
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > navbarInfo.offsetHeight) {
+        navbarInfo.classList.add("hidden-info");
+        mainNavbar.classList.add("fixed-navbar");
+      } else {
+        navbarInfo.classList.remove("hidden-info");
+        mainNavbar.classList.remove("fixed-navbar");
+      }
+    });
+  </script>
+</body>
+</html>
