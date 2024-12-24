@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5EFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 350px;
+    background-color: #E5D9F2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #D3CCE3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #BBA0D9;
+}
+
+.operator {
+    background-color: #C29DE3;
+}
+
+.operator:hover {
+    background-color: #A97CCC;
+}
+
+@media (max-width: 480px) {
+    input[type="text"] {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+	</style>
+</head>
+<body>
+
+<div class="calculator">
+    <div class="display">
+        <input type="text" id="displayResult" readonly>
+    </div>
+    <div class="buttons">
+        <button id="clearBtn" class="operator">AC</button>
+        <button id="percentageBtn" class="operator">%</button>
+        <button id="multiplyBtn" class="operator">*</button>
+        <button id="deleteBtn" class="operator">DEL</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button id="subtractBtn" class="operator">-</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button id="additionBtn" class="operator">+</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button id="enterBtn" class="operator">=</button>
+    </div>
+</div>
+
+<!-- -----container end here---- -->
+
+	<script>
+		 let display = document.getElementById("displayResult");
+		 // console.log(display);
+
+		 let buttons = document.querySelectorAll("button");
+		 // console.log(buttons);
+
+		 let buttonArray = Array.from(buttons);
+		 // console.log(buttonArray);
+
+		 // buttonArray.forEach(function(btn){
+		 // 	console.log(btn.innerHTML);
+		 // })
+
+		 let string = "";
+
+		 buttonArray.forEach(btn =>{
+		 	// console.log(btn.innerHTML);
+
+		 	// btn.addEventListener('click', function(event){
+		 	// 	// console.log(event);
+		 	// 	console.log(event.target.innerHTML);
+		 	// })
+
+		 	// btn.addEventListener('click', (e) =>{
+		 	// 	// console.log(event);
+		 	// 	console.log(e.target.innerHTML);
+		 	// })
+
+		 	// btn.addEventListener('click', (e) =>{
+		 	// 	string += e.target.innerHTML
+		 	// 	display.value = string
+		 	// })
+
+
+
+		 	btn.addEventListener('click', (e) =>{
+
+		 		if(e.target.innerHTML == "DEL"){
+		 			string = string.substring(0, string.length - 1);
+		 			display.value = string;
+		 		}else if(e.target.innerHTML == "AC"){
+		 			string = "";
+		 			display.value = string;
+		 		}else if(e.target.innerHTML == "="){
+		 			string = eval(string);
+		 			display.value = string;
+		 		}
+
+
+		 		else{
+		 			string += e.target.innerHTML;
+		 			display.value = string;	
+		 		}
+
+
+
+
+		 		
+		 	})
+		 })
+	</script>
+</body>
+</html>

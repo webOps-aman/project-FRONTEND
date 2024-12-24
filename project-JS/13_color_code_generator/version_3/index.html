@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+<!-- ----color area start here----- -->
+		<div class="color_area">
+			<p class="project_name">Random Color Code Generator</p>
+			<div class="main_div">
+				<div class="display" id="display"></div>
+				<div class="buttons_area">
+					<div class="generateDiv">
+						<button type="button" class="actionBtn generateBtn" onclick="generateHexColor()">Generate</button>
+					</div>
+					<div class="copyDiv">
+						<button type="button" class="actionBtn copyBtn" onclick='copyColor()'>Copy</button>
+					</div>
+				</div>
+				<div class="infoArea">
+					<div class="hexDiv">
+						<input type="text" class="hexColorCode" id="hexColorCode">
+					</div>
+					<div class="messageDiv">
+						<input type="text" class="message" id="message">
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- ----color area end here----- -->
+
+<!-- ----copy color record start here----- -->
+		<div class="record_area">
+			<p class="record_heading">Color Code Clipboard History</p>
+			<div class="main_record_div">
+				<div class="record_display" id="record_display"></div>
+			</div>
+		</div>
+<!-- ----copy color record end here----- -->
+
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text Resize App</title>
+	<style>
+		#app {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: center;
+		}
+		#textToResize {
+			font-size: 16px;
+			transition: all 0.5s ease;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<h1>Text Resize App</h1>
+		<label for="fontSize">Adjust Text Size:</label>
+		<input
+			type="range"
+			id="fontSize"
+			min="0"
+			max="200"
+			step="1"
+			value="0"
+		>
+		<p id="textToResize">This is the text that will be resized.</p>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			let fontSizeInput = document.getElementById('fontSize');
+			let textToResize = document.getElementById('textToResize');
+
+			fontSizeInput.addEventListener('input', () => {
+				if (fontSizeInput.value === "0") {
+					textToResize.style.fontSize = "16px";
+				} else {
+					textToResize.style.fontSize = fontSizeInput.value + "px";
+				}
+			});
+		});
+	</script>
+</body>
+</html>

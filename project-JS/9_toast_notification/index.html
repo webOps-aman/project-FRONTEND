@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: lightblue;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			overflow: hidden;
+			margin: 0;
+		}
+		.btn {
+			padding: 15px;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px 0px darkblue;
+			border: transparent;
+			color: darkblue;
+			font-weight: 700;
+			font-size: 18px;
+			transition: all 0.5s ease;
+			cursor: pointer;
+		}
+		.btn:hover {
+			box-shadow: 0px 0px 10px 0 lightblue;
+		}
+		.btn:active {
+			transform: scale(0.98);
+		}
+		#toasts {
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+		.toast {
+			background-color: #fff;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+			margin: 0.5rem;
+		}
+		.toast.info {
+			color: rebeccapurple;
+		}
+		.toast.success {
+			color: green;
+		}
+		.toast.error {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="toasts"></div>
+	<button class="btn" id="button">Show Notification</button>
+
+	<script>
+		let button = document.querySelector("#button");
+		let toasts = document.querySelector("#toasts");
+
+		let msg = [
+			'Message One',
+			'Message Two',
+			'Message Three',
+			'Message Four'
+		];
+
+		let types = ['info', 'success', 'error'];
+
+		button.addEventListener('click', () => createNotification());
+
+		function createNotification(message = null, type = null) {
+			let notif = document.createElement('div');
+			notif.classList.add('toast');
+			notif.classList.add(type ? type : getRandomType());
+			notif.innerText = message ? message : getRandomMessage();
+			toasts.appendChild(notif);
+
+			setTimeout(() => {
+				notif.remove();
+			}, 3000);
+		}
+
+		function getRandomMessage() {
+			return msg[Math.floor(Math.random() * msg.length)];
+		}
+
+		function getRandomType() {
+			return types[Math.floor(Math.random() * types.length)];
+		}
+	</script>
+
+</body>
+</html>

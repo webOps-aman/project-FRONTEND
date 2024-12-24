@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice_1</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			
+			<section class="box_upper">
+				<h1>Expense Tracker</h1>
+				<div class="balance">
+					<h2 id="netAmount">रु 0 (available)</h2>
+					<h3>Your Balance</h3>
+				</div>
+			</section>
+
+
+			<div class="transaction_container">
+				<h4>Transactions</h4>
+				<hr>
+				<div class="transactions"></div>
+				<div class="products"></div>
+			</div>
+
+
+			<section class="transaction_form">
+				<h4>Add Transaction</h4>
+
+
+				<form id="transactionForm">
+
+					<div class="inputs">
+						<div class="form_control">
+							<label for="text">Text</label>
+							<input
+								placeholder="Enter Description"
+								type="text"
+								id="text"
+								required
+							>
+						</div>
+						<div class="form_control">
+							<label for="amount">Amount</label>
+							<input
+								placeholder="Enter Amount"
+								type="number"
+								id="amount"
+								required
+							>
+						</div>
+					</div>
+
+					<div class="buttons_container">
+						<button type="submit" id="earnBtn">
+							<p id="earning">रु 0</p>
+							<p>Earnings</p>
+						</button>
+						<button type="submit" id="expBtn">
+                             <p id="expense">रु 0</p>
+                             <p>Expense</p>
+                         </button>	
+					</div>
+
+				</form>
+
+
+			</section>
+
+		</div>
+	</div>
+
+
+	<script src="practice_1.js"></script>
+</body>
+</html>

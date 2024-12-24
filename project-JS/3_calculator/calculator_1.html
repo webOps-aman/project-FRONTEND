@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.calculator{
+			width:400px;	
+			box-shadow: 0 0 5px 0 grey;
+			padding:5px;
+		}
+		#display{
+			width:100%;
+			height:80px;
+			font-size: 50px;
+			border:none;
+			background-color: #F5F5F7;
+		}
+		input[type="text"]:focus{
+			border:none;
+			outline: none;
+		}
+		.btn_group{
+			display: flex;
+			justify-content: space-between;
+			padding:5px;
+		}
+		.btn_element{
+			width:20%;
+			height:60px;
+		}
+		button{
+			width:100%;
+			height:100%;
+			border:none;
+			font-size: 18px;
+			font-weight: bold;
+			border-radius: 5px;
+
+		}
+		.operator{
+			background-color:lightblue;
+			transition: all 0.5s ease;
+			cursor: pointer;
+		}
+		.operator:hover{
+			background-color:blue;
+			color:white;
+		}
+		.numeric_btn{
+			background-color: #ebf4f5;
+			cursor: pointer;
+			box-shadow: 0 0 3px 0 grey;
+		}
+		.numeric_btn:hover{
+			background-color: #b5c6e0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="calculator">
+		
+		<div class="display_area">
+			<input type="text" id="display">
+		</div>
+
+		<div class="btn_group buttons_section_1">
+			<div class="btn_element"><button class="operator">AC</button></div>
+			<div class="btn_element"><button class="operator">%</button></div>
+			<div class="btn_element"><button class="operator">*</button></div>
+			<div class="btn_element"><button class="operator">DEL</button></div>
+		</div>
+
+		<div class="btn_group buttons_section_2">
+			<div class="btn_element"><button class="numeric_btn">7</button></div>
+			<div class="btn_element"><button class="numeric_btn">8</button></div>
+			<div class="btn_element"><button class="numeric_btn">9</button></div>
+			<div class="btn_element"><button class="operator">-</button></div>
+		</div>
+
+		<div class="btn_group buttons_section_3">
+			<div class="btn_element"><button class="numeric_btn">4</button></div>
+			<div class="btn_element"><button class="numeric_btn">5</button></div>
+			<div class="btn_element"><button class="numeric_btn">6</button></div>
+			<div class="btn_element"><button class="operator">+</button></div>
+		</div>
+
+		<div class="btn_group buttons_section_4">
+			<div class="btn_element"><button class="numeric_btn">1</button></div>
+			<div class="btn_element"><button class="numeric_btn">2</button></div>
+			<div class="btn_element"><button class="numeric_btn">3</button></div>
+			<div class="btn_element"><button class="operator">/</button></div>
+		</div>
+
+		<div class="btn_group buttons_section_5">
+			<div class="btn_element"><button class="numeric_btn">0</button></div>
+			<div class="btn_element"><button class="numeric_btn">00</button></div>
+			<div class="btn_element"><button class="numeric_btn">.</button></div>
+			<div class="btn_element"><button class="operator">=</button></div>
+		</div>
+
+	</div>
+
+
+	<script>
+		let inputDisplay = document.getElementById("display");
+		let buttons = document.querySelectorAll("button");
+		let buttonArray = Array.from(buttons);
+		let string = "";
+
+
+		buttonArray.forEach(btn => {
+			// console.log(btn)
+
+			btn.addEventListener('click', function(e){
+				
+				if(e.target.innerHTML === "DEL"){
+					string = string.substring(0, string.length - 1);
+					display.value = string;
+				}else if(e.target.innerHTML === "AC"){
+					string = "";
+					display.value = string;
+				}else if(e.target.innerHTML === "="){
+					string = eval(string);
+					display.value = string;
+				}else{
+					string += e.target.innerHTML
+					display.value = string;
+				}
+				
+			})
+		})
+
+	</script>
+
+</body>
+</html>
