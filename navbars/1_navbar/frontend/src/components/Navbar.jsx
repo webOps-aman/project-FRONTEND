@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css";
 import DarkModeButton from './DarkModeButton';
 
 const Navbar = () => {
+
+    const [darkMode, setDarkMode] = useState(false);
+    const [aboutDarkMode, setAboutDarkMode] = useState(false);
+    const [servicesDarkMode, setServicesDarkMode] = useState(false);
+    const [teamDarkMode, setTeamDarkMode] = useState(false);
+
+    const toggleDarkMode = () =>{
+        setDarkMode(!darkMode);
+        setAboutDarkMode(!aboutDarkMode);
+        setServicesDarkMode(!servicesDarkMode);
+        setTeamDarkMode(!teamDarkMode);
+    }
+
   return (
     <>
-        <section className='navbar-section'>
-        <div className='container-fluid navbar-container'>
-          <div className='row navbar-row'>
+        <section>
+        <div className='container-fluid'>
+          <div className='row'>
             <div className='col-md-12'>
 {/* ----------navbar start here---------- */}
-                <nav className="navbar navbar-expand-lg  fixed-top">
+                {/* <nav className="navbar navbar-expand-lg fixed-top"> */}
+                <nav className={`navbar navbar-expand-lg fixed-top ${darkMode ? 'dark-mode' : 'navbar-mode'}`}>
                     <div className="container">
                         <div className="offset-md-1">
                             <NavLink className="navbar-brand" to="/">Brand Name</NavLink>
@@ -31,18 +45,10 @@ const Navbar = () => {
                                     <NavLink className="nav-link" to="/">Services</NavLink>
                                 </li>
                                 <li className="nav-item me-2">
-                                    <NavLink className="nav-link" to="/">Portfolio</NavLink>
-                                </li>
-                                <li className="nav-item me-2">
                                     <NavLink className="nav-link" to="/">Team</NavLink>
                                 </li>
-                                <li className="nav-item me-2">
-                                    <NavLink className="nav-link" to="/">Contact</NavLink>
-                                </li>
-                                <li className="">
-                                    <DarkModeButton/>
-                                </li>
                             </ul>
+                            <DarkModeButton onToggle={toggleDarkMode} />
                         </div>
                     </div>
                 </nav>
@@ -52,6 +58,43 @@ const Navbar = () => {
         </div>
       </section>
      
+
+     {/* ----------about section start here---------- */}
+        <section className={`${aboutDarkMode ? 'aboutDarkMode' : 'about-section'}`}>
+            <div className="container about-container">
+                <div className="row about-row ">
+                    <div className="col-md-12 d-flex justify-content-center align-items-center">
+                        <h1 class="about-title">About-Section</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+     {/* ----------about section end here---------- */}
+
+
+     {/* ----------Services section start here---------- */}
+     <section className={`${servicesDarkMode ? 'servicesDarkMode' : 'services-section'}`}>
+            <div className="container services-container">
+                <div className="row services-row">
+                    <div className="col-md-12 d-flex justify-content-center align-items-center">
+                        <h1 className="services-title">Services-Section</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+     {/* ----------Services section end here---------- */}
+
+          {/* ----------team section start here---------- */}
+          <section className={`${teamDarkMode ? 'teamDarkMode' : 'team-section'}`}>
+            <div className="container team-container">
+                <div className="row team-row">
+                    <div className="col-md-12 d-flex justify-content-center align-items-center">
+                        <h1 className="team-title">Team-Section</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+     {/* ----------team section end here---------- */}
     </>
   )
 }

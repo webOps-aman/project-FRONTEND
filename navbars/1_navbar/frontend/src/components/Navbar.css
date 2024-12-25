@@ -1,24 +1,72 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-.navbar-section{
-    border: 1px dashed red;
-    background-color: lightblue;
-    
+
+.dark-mode {
+    background-color: #000 !important; /* Force dark mode background */
+    color: #fff !important; /* Force dark mode text color */
 }
-.navbar-container{
-    border: 1px dashed black;
-    background-color: lightblue;   
-}
-.navbar{
+
+/* -----navbar start here----- */
+.navbar-mode {
     background-color: lightblue;
 }
-.navbar-row{
-    border: 1px dashed red;
+.dark-mode .navbar-brand{
+    background-color: #000 !important; /* Force dark mode background */
+    color: #fff !important; /* Force dark mode text color */
+}
+.dark-mode .nav-link {
+    color: #fff !important; /* Dark mode text color for links */
+}
+/* -----navbar end here----- */
+
+/* -----about start here----- */
+.aboutDarkMode{
+    background-color: #000 !important;
+    color: #fff !important;
+    margin-top:58px;
+}
+.about-section{
+    margin-top:58px;
     background-color: lightblue;
 }
-.navbar-brand, .nav-link{
-    color:#000 !important;
+.about-row{
+    height:91vh;
 }
+/* -----about end here----- */
+
+/* -----services start here----- */
+.servicesDarkMode{
+    background-color: #000 !important;
+    color: #fff !important;
+    margin-top:2px;
+}
+.services-section{
+    margin-top:2px;
+    background-color: lightblue;
+}
+.services-row{
+    height:91vh;
+}
+/* -----services end here----- */
+
+/* -----team start here----- */
+.teamDarkMode{
+    background-color: #000 !important;
+    color: #fff !important;
+    margin-top:2px;
+}
+.team-section{
+    margin-top:2px;
+    background-color: lightblue;
+}
+.team-row{
+    height:91vh;
+}
+/* -----team end here----- */
+
+
+
+
