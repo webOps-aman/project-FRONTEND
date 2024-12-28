@@ -5,8 +5,6 @@
 | 	buttons	  | 	3_vol	 | 	----	 | 
 | 	buttons	  | 	4_vol	 | 	----	 |
 | 	navbars	  | 	1_navbar	 | dark-mode template using react	 |
-| 	navbars	  | 	2_navbar	 | ----	 |
-| 	navbars	  | 	3_navbar	 | ----	 |
 | 	project-JS  | 	1_temperature_convertor	 | ----	 |
 | 	project-JS  | 	2_time_table_multiplication	 | ----	 |
 | 	project-JS  | 	3_calculator	 | ----	 |
