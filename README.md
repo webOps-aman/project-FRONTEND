@@ -4,6 +4,7 @@
 | 	buttons	  | 	2_vol	 | 	----	 | 
 | 	buttons	  | 	3_vol	 | 	----	 | 
 | 	buttons	  | 	4_vol	 | 	----	 |
+| 	canvasjs	  | 	1_vol	 | 	----	 |
 | 	input	  | 	1_input	 | 	floating label input	 |
 | 	navbars	  | 	1_navbar	 | dark-mode template using react	 |
 | 	project-JS  | 	1_temperature_convertor	 | ----	 |
