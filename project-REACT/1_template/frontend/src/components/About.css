@@ -1,15 +1,18 @@
 .about-section{
     margin-top:2px;
-    background-image: url("../../public/images/background-10.png");
+    /* background-image: url(../images/background-10.png); */
+    background-image: url(../../public/images/background-10.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
    }  
    .about-col-image{
     height:500px;
+    /* box-shadow: 0 0 5px 0 black; */
    }
    .about-col-image img {
     height: 100%;
     object-fit: contain;
+    /* box-shadow: 0 0 10px 0 black; */
     border-radius: 10px;
 }

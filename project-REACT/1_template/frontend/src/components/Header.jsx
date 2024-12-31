@@ -1,11 +1,10 @@
 import React from 'react'
-import "./Header.css";
+import './Header.css';
 
 const Header = () => {
   return (
     <>
-{/* -- -----section header start here----- -- */}
-        <section className="header-section">
+        <section id="home" className="header-section">
             <div className="container-fluid header-container">
                 <div className="row header-row">
                     <div className="col-md-7 header-col mx-auto">
@@ -20,7 +19,6 @@ const Header = () => {
                 </div>
             </div>
         </section>
-{/* -- -----section header end here----- -- */}
     </>
   )
 }
