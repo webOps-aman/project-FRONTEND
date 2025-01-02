@@ -1,0 +1,65 @@
+[
+    {
+        "service": "Web Design",
+        "description": "Creating visually appealing and responsive websites that enhance user experience ensuring seamless navigation and optimal performance across devices.",
+        "iconClass": "fa fa-globe",
+        "price": "1599Rs - 8593Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Web Development",
+        "description": "Building custom websites with modern technologies for optimal performance user experience and seamless functionality across all platforms.",
+        "iconClass": "fa-solid fa-code",
+        "price": "2599Rs - 9593Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "API Development",
+        "description": "Creating secure, scalable APIs to integrate applications ensuring smooth data flow between systems for enhanced functionality.",
+        "iconClass": "fa-solid fa-cloud-arrow-up",
+        "price": "3599Rs - 7593Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Digital Marketing Services",
+        "description": "Driving brand awareness and online presence through SEO social media PPC email campaigns and targeted digital strategies.",
+        "iconClass": "fa-solid fa-bullhorn",
+        "price": "3099Rs - 5090Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Hosting & Domain Services",
+        "description": "Providing reliable web hosting solutions and domain registration services ensuring fast, secure and scalable website performance.",
+        "iconClass": "fa-solid fa-database",
+        "price": "399Rs - 100000Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Content Writing & Copywriting",
+        "description": "Crafting engaging informative content and compelling copy that enhances brand messaging and drives audience engagement effectively.",
+        "iconClass": "fa-solid fa-pen",
+        "price": "1000Rs - 6000Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Chatbot Development",
+        "description": "Developing AI-powered chatbots to automate customer support improve engagement and provide 24/7 service on your website.",
+        "iconClass": "fa-brands fa-rocketchat",
+        "price": "2000Rs - 5000Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Optimization Services",
+        "description": "Enhancing website performance by improving speed responsiveness SEO and usability for a better user experience and higher rankings.",
+        "iconClass": "fa-solid fa-filter",
+        "price": "1000Rs - 3000Rs",
+        "provider": "Aman Tech Solution"
+    },
+    {
+        "service": "Maintenance & Support",
+        "description": "Offering ongoing website maintenance and technical support to ensure optimal functionality, security, and up-to-date content.",
+        "iconClass": "fa-solid fa-headset",
+        "price": "1000Rs - 4000Rs",
+        "provider": "Aman Tech Solution"
+    }
+]

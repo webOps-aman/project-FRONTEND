@@ -1,7 +1,9 @@
 import React from 'react';
 import './About.css';
+import AboutDynamicData from "./AboutDynamicData.json";
 
 const About = () => {
+
   return (
     <>
       <section id="about" className="about-section">
@@ -18,13 +20,11 @@ const About = () => {
                 Our team of talented designers brings your vision to life by creating stunning, user-friendly websites. We believe that every detail matters and strive to deliver websites that not only look great but also provide an exceptional user experience. Let us help you build a digital presence that stands out.
               </p>
               <ul className="about-list">
-                <li className="about-items">We design with a focus on creativity and usability.</li>
-                <li className="about-items">Our websites are optimized for all devices and screen sizes.</li>
-                <li className="about-items">We ensure seamless functionality with clean and efficient code.</li>
-                <li className="about-items">Our team collaborates closely with clients to achieve perfection.</li>
-                <li className="about-items">We integrate the latest technologies to enhance user engagement.</li>
-                <li className="about-items">We prioritize fast loading times for an optimal user experience.</li>
-                <li className="about-items">We offer post-launch support to ensure your website stays up-to-date.</li>
+                {AboutDynamicData.map((curElem) => (
+                  <li key={curElem.id} className="about-items">
+                    {curElem.paragraph}
+                  </li>
+                ))}
               </ul>
               <p className="about-para-two">
                 With years of experience and a passion for innovation, we are committed to delivering websites that exceed your expectations. Whether you're starting from scratch or revamping an existing site, our team is here to guide you every step of the way. We take the time to understand your unique needs and tailor our designs to match your brand's identity. Our goal is not just to create beautiful websites, but also to ensure they are functional, responsive, and user-friendly. Trust us to transform your ideas into a digital masterpiece that drives results, boosts your online presence, and engages your audience in meaningful ways.
