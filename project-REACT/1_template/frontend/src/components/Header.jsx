@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="row header-row">
                     <div className="col-md-7 header-col mx-auto">
                         <div className="content">
-                            <h1 className="content-heading">Welcome to <span className="auto-text">Aman Tech Solution</span></h1>
+                            <h1 className="content-heading">Welcome to <span className="auto-text">Company Name Here...</span></h1>
                             <p className="content-para">We craft beautiful websites with our talented team of designers.</p>
                             <div className="get-started-div mx-auto">
                                 <button type="button" className="get-started-btn">Get Started</button>

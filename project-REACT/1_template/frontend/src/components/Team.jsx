@@ -11,7 +11,7 @@ const Team = () => {
             exportEnabled: true,
             animationEnabled: true,
             title:{
-                text: "Number of Employees at Aman Tech Solutions."
+                text: "Number of Employees at Company Name Here..."
             },
     
             data: [
@@ -42,7 +42,7 @@ const Team = () => {
 
   return (
     <>
-        <section id="team" className='team-section my-5'>
+        <section id="team" className='team-section my-2'>
             <div className='container team-container'>
                 <div className='row team-row'>
                     <div className='col-md-12 team-col'>

@@ -1,8 +1,9 @@
-.achievements-section{
+.achievements-section {
     background-image: url("../../public/images/background-1.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    padding-bottom: 50px; 
 }
 
 :root{ --achievements-color: #0C6CBA; }
@@ -92,3 +93,20 @@
     font-weight: 700;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .achievements-section {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .achievements-row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .achievements-col {
+        margin-bottom: 20px; 
+    }
+}
+

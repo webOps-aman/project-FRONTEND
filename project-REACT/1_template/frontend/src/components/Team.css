@@ -1,12 +1,29 @@
-.team-row{
-    height: 80vh;
+.team-section {
+    margin-top: 50px;
+    height:80vh;
+    box-shadow: 0 0 5px 0 grey;
 }
-.team-col{
-    box-shadow:0px 0px 10px 0 grey;
-    border-radius: 10px;
-    padding:10px;
+
+.team-row {
+    height: auto; 
 }
-.chartContainer{
-    width: 100%;
-    /* height:80vh; */
+
+.chartContainer {
+    height: auto; 
+    margin-top: 20px; 
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        padding: 20px; 
+    }
+
+    .team-row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .team-col {
+        margin-bottom: 20px; 
+    }
 }
