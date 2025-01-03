@@ -28,37 +28,37 @@ const Achievements = () => {
             <div className="row achievements-row mt-5 d-md-flex justify-content-md-evenly">
                 <div className="col-md-2 achievements-col" data-aos="zoom-in">
                     <div className="counter-area">
-                        <div className="counter counter-number" data-target="15"></div>
+                        <div className="counter counter-number" data-target="15">15</div>
                         <div className="counter-title"><p>Years of Experience</p></div>
                     </div>
                 </div>
                 <div className="col-md-2 achievements-col" data-aos="zoom-in">
                     <div className="counter-area">
-                        <div className="counter counter-number" data-target="1256"></div>
+                        <div className="counter counter-number" data-target="1256">1256</div>
                         <div className="counter-title"><p>Total Projects</p></div>
                     </div>
                 </div>
                 <div className="col-md-2 achievements-col" data-aos="zoom-in">
                     <div className="counter-area">
-                        <div className="counter counter-number" data-target="1050"></div>
+                        <div className="counter counter-number" data-target="1050">1050</div>
                         <div className="counter-title"><p>Completed Projects</p></div>
                     </div>
                 </div>
                 <div className="col-md-2 achievements-col" data-aos="zoom-in">
                     <div className="counter-area">
-                        <div className="counter counter-number" data-target="206"></div>
+                        <div className="counter counter-number" data-target="206">206</div>
                         <div className="counter-title"><p>Active Projects</p></div>
                     </div>
                 </div>
                 <div className="col-md-2 achievements-col" data-aos="zoom-in">
                     <div className="counter-area">
-                        <div className="counter counter-number" data-target="81"></div>
+                        <div className="counter counter-number" data-target="81">81</div>
                         <div className="counter-title"><p>Upcoming Projects</p></div>
                     </div>
                 </div>
                 <div className="col-md-2 achievements-col" data-aos="zoom-in">
                     <div className="counter-area">
-                        <div className="counter counter-number" data-target="1029"></div>
+                        <div className="counter counter-number" data-target="1029">1029</div>
                         <div className="counter-title"><p>Happy Clients</p></div>
                     </div>
                 </div>

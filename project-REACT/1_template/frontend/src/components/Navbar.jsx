@@ -10,7 +10,7 @@ const Navbar = () => {
             {/* -- Navbar Start -- */}
             <nav className="navbar navbar-expand-lg fixed-top">
               <div className="container">
-                <a className="navbar-brand" href="#home">Company Name</a>
+                <a className="navbar-brand" href="#home">Aman Tech Solution</a>
                 <button
                   className="navbar-toggler"
                   type="button"
