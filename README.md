@@ -22,6 +22,7 @@
 | 	project-REACT | 	1_template	 | sample web template (web development related company) using bootstrap and canvasjs chart	 |
 | 	project-REACT | 	2_template	 | ----	 |
 | 	project-REACT | 	3_speech_recognition	 | speech to text convertor using react & tailwind css	 |
+| 	project-REACT | 	4_responsive_sidebar	 | responsive sidebar using react & tailwind css	 |
 | 	project-TAILWIND | 	1_template	 | ----	 |
 | 	project-TAILWIND | 	1_template	 | ----	 |
 | 	---- | 	----	 | ----	 |
