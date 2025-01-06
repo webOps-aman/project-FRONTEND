@@ -21,7 +21,7 @@
 | 	project-JS  | 	14_show_hide_password	 | ----	 |
 | 	project-REACT | 	1_template	 | sample web template (web development related company) using bootstrap and canvasjs chart	 |
 | 	project-REACT | 	2_template	 | ----	 |
-| 	project-REACT | 	4_speech_recognition	 | speech recognition using react & tailwind css	 |
+| 	project-REACT | 	3_speech_recognition	 | speech recognition using react & tailwind css	 |
 | 	project-TAILWIND | 	1_template	 | ----	 |
 | 	project-TAILWIND | 	1_template	 | ----	 |
 | 	---- | 	----	 | ----	 |
