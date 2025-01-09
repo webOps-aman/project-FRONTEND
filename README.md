@@ -24,6 +24,7 @@
 | 	project-REACT | 	3_speech_recognition	 | speech to text convertor using react & tailwind css	 |
 | 	project-REACT | 	4_responsive_sidebar	 | responsive sidebar using react & tailwind css	 |
 | 	project-REACT | 	5_portfolio	 | using react & tailwindcss	 |
+| 	project-REACT | 	6_api_data_table	 | using react & tailwindcss	 |
 | 	project-TAILWIND | 	1_template	 | ----	 |
 | 	project-TAILWIND | 	1_template	 | ----	 |
 | 	---- | 	----	 | ----	 |
