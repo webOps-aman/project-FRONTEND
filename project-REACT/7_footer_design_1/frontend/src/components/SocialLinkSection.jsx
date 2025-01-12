@@ -3,7 +3,8 @@ import React from 'react'
 const SocialLinkSection = () => {
   return (
     <>
-        <div className='social-links-section flex justify-between'>
+        <div className='social-links-section'>
+        <div className='sm:flex sm:justify-between border-2 border-yellow-400 border-solid'>
             <div className='copyright-info'>
                 <p className='text-white '>2025@Design - Aman | Terms Conditions & Policy</p>
             </div>
@@ -23,6 +24,7 @@ const SocialLinkSection = () => {
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </>
   )
