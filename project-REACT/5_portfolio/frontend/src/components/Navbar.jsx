@@ -13,16 +13,16 @@ const Navbar = () => {
     <>
       {/* Navbar Section */}
       <div className="navbar-section bg-[#000] w-[100%]">
-        <div className="navbar-container py-4">
+        <div className="navbar-container py-8">
           {/* Navbar Area */}
-          <div className="navbar-area w-[90%] mx-auto flex justify-between border-solid border-white">
+          <div className="navbar-area w-[90%] mx-auto flex justify-between">
             <div className="myName text-white">
-              <p className="text-lg font-semibold">Amandeep Singh</p>
+              <p className="text-xl font-bold">Amandeep Singh</p>
             </div>
 
-            <div className="menus-wrapper sm:w-[60%] w-[30%] flex justify-center border-yellow-300 border-dashed">
+            <div className="menus-wrapper sm:w-[60%] w-[30%] flex justify-center">
               {/* Main Menu */}
-              <div className="menus w-[60%] hidden sm:block border-white border-dashed text-lg font-semibold">
+              <div className="menus w-[60%] hidden sm:block text-xl font-semibold">
                 <ul className="navbar-nav flex justify-evenly">
                   <li className="nav-item text-white">
                     <a className="nav-link" href="#home">Home</a>
@@ -43,8 +43,8 @@ const Navbar = () => {
               </div>
 
               {/* Social Links */}
-              <div className="socialLink w-[40%] hidden sm:block text-lg font-semibold border-red-600 border-dashed">
-                <ul className="navbar-nav flex justify-evenly">
+              <div className="socialLink w-[40%] hidden sm:block text-lg font-semibold">
+                <ul className="navbar-nav flex justify-evenly text-xl">
                   <li className="nav-item text-white">
                     <a
                       className="nav-link"
