@@ -3,12 +3,12 @@ import React from 'react'
 const SocialLinkSection = () => {
   return (
     <>
-        <div className='social-links-section'>
-        <div className='sm:flex sm:justify-between border-2 border-yellow-400 border-solid'>
-            <div className='copyright-info'>
-                <p className='text-white '>2025@Design - Aman | Terms Conditions & Policy</p>
+        <div className='sm:w-[95%] sm:h-[10%] h-[20vh] sm-py-0 py-2 sm:flex sm:items-center mx-auto social-links-section'>
+        <div className='w-full sm:flex sm:justify-between'>
+            <div className='copyright-info sm:text-xl'>
+                <p className='text-white sm:text-left text-center'>2025@Design - Aman | Terms Conditions & Policy</p>
             </div>
-            <div className='social-links text-white w-[30%] border-2 border-solid border-white'>
+            <div className='social-links sm:text-xl text-white sm:w-[30%] sm:mt-0 mt-3'>
                 <ul className='links flex justify-evenly'>
                     <li className='links-items'>
                         <a href="#facebook">facebook</a>
