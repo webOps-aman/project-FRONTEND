@@ -1,36 +1,40 @@
 import React from 'react'
 
+
+
 const HeroSection = () => {
   return (
     <>
-        <div className='hero-section w-[100%] h-[87vh] mt-[1px] ' style={{backgroundImage: "url('/images/background-4.jpg')", backgroundSize: "cover", backgroundPosition: "center",  width: "100%"}}>
-            <div className='main-container w-[90%] h-[100%] mx-auto border-2 border-solid border-white'>
+        <div className='hero-section w-[100%] sm:h-[87vh] mt-[1px]' style={{backgroundImage: "url('/images/background-4.jpg')", backgroundSize: "cover", backgroundPosition: "center",  width: "100%"}}>
+            <div className='main-container sm:w-[90%] w-[95%] sm:h-[100%] mx-auto'>
 {/* -----content-area-start-here----- */}
-                <div className='content-area w-[100%] h-[100%] flex justify-between border-2 border-solid border-yellow-300'>
+                <div className='content-area sm:w-[100%] sm:h-[100%] sm:flex sm:justify-between'>
 
 {/* -----content-left-start-here----- */}                 
-                    <div className='info w-[55%] border-2 border-dashed border-orange-400'>
-                        <p className='candidate-name text-white text-2xl font-semibold'>Hi there, I'm Amandeep Singh </p>
-                        <p className='candidate-title text-5xl text-white font-bold'>Crafting Intuitive</p>
-                        <p className='candidate-title text-5xl text-[#795cf7] font-bold'>Digital Experiences</p>
-                        <p className='candidate-description text-lg text-white font-semibold'>
+                    <div className='info sm:w-[50%] sm:pt-36 pt-10'>
+                        <p className='candidate-name pb-4 text-white sm:text-2xl text-lg  font-semibold'>Hi there, I'm Amandeep Singh </p>
+                        <p className='candidate-title pb-2  text-5xl text-white font-bold'>Crafting Intuitive</p>
+                        <p className='candidate-title pb-10 text-5xl text-blue-500 font-bold'>Digital Experiences</p>
+                        <p className='candidate-description text-lg sm:text-left text-justify text-white font-semibold'>
                             I specialize in building scalable and efficient web applications using the MERN stack, helping individuals and brands achieve their goals through user-focused digital solutions and interactive experiences.
                         </p>
 
-                        <div className='button-group w-[30%] flex justify-between border-2 border-dashed border-orange-400'>
-                            <div className='download-cv-div  bg-[#795cf7]'>
-                                <button className='download-btn px-2'>Download CV</button>
+                        <div className='button-group sm:w-[52%] mt-10 sm:flex sm:justify-between'>
+                            <div className='download-cv-div rounded-lg sm:py-0 py-3'>
+                                <button type="button" className="w-full px-10 py-3 text-lg font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none  rounded-lg text-center dark:hover:bg-blue-700">Download CV</button>
                             </div>
-                            <div className='hire-me-div  bg-[#fff]'>
-                                <button className='hire-btn'>Hire Me</button>
+                            <div className='hire-me-div'>
+                            <button type="button" className="w-full px-10 py-3 text-lg font-medium text-black bg-white hover:bg-blue-500 hover:text-white focus:ring-4 focus:outline-none rounded-lg text-center">Hire Me</button>
                             </div>
                         </div>
                     </div>
 {/* -----content-left-end-here----- */}
 
 {/* -----content-right-start-here----- */}                 
-<div className='info-image w-[40%] border-2 border-dashed border-orange-400'>
-
+<div className='info-image sm:w-[45%] sm:py-0 py-10  sm:flex sm:justify-center sm:items-center'>
+    <div className='image-div'>
+        <img src="/images/profile_7.png" alt="" />
+    </div>
 </div>
 {/* -----content-right-end-here----- */}   
 

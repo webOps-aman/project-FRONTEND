@@ -17,7 +17,7 @@ const Navbar = () => {
           {/* Navbar Area */}
           <div className="navbar-area w-[90%] mx-auto flex justify-between">
             <div className="myName text-white">
-              <p className="text-xl font-bold">Amandeep Singh</p>
+              <p className="text-xl font-bold">Portfolio</p>
             </div>
 
             <div className="menus-wrapper sm:w-[60%] w-[30%] flex justify-center">
