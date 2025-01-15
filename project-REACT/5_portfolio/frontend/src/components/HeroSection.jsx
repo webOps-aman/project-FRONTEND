@@ -5,7 +5,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <>
-        <div className='hero-section w-[100%] sm:h-[87vh] mt-[1px]' style={{backgroundImage: "url('/images/background-4.jpg')", backgroundSize: "cover", backgroundPosition: "center",  width: "100%"}}>
+        <div id="home" className='hero-section w-[100%] sm:h-[87vh] mt-[93px]' style={{backgroundImage: "url('/images/background-4.jpg')", backgroundSize: "cover", backgroundPosition: "center",  width: "100%"}}>
             <div className='main-container sm:w-[90%] w-[95%] sm:h-[100%] mx-auto'>
 {/* -----content-area-start-here----- */}
                 <div className='content-area sm:w-[100%] sm:h-[100%] sm:flex sm:justify-between'>

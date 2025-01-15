@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar Section */}
-      <div className="navbar-section bg-[#000] w-[100%]">
+      <div className="navbar-section bg-[#000] w-[100%] fixed top-0">
         <div className="navbar-container py-8">
           {/* Navbar Area */}
           <div className="navbar-area w-[90%] mx-auto flex justify-between">
