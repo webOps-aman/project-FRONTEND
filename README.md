@@ -19,6 +19,7 @@
 | 	project-JS  | 	12_text_resize_app	 | ----	 |
 | 	project-JS  | 	13_color_code_generator	 | ----	 |
 | 	project-JS  | 	14_show_hide_password	 | ----	 |
+| 	project-JS  | 	15_chatbot	 | using css	 |
 | 	project-REACT | 	1_template	 | sample web template (web development related company) using bootstrap and canvasjs chart	 |
 | 	project-REACT | 	2_template	 | ----	 |
 | 	project-REACT | 	3_speech_recognition	 | speech to text convertor using react & tailwind css	 |
