@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <>
-      <div id="about" className='about-section sm:w-[100%] sm:h-[87vh] mt-[1px] sm:flex sm:justify-center sm:items-center' style={{backgroundImage: "url('/images/background-10.jpg')", backgroundSize: "cover", backgroundPosition: "center",  width: "100%"}}>
+      <div id="about" className='about-section sm:w-[100%] sm:h-[87vh] mt-2 sm:flex sm:justify-center sm:items-center'>
         <div className='about-container sm:w-[90%] sm:h-[90%]  bg-black sm:rounded-2xl'>
 {/* -----about-content-start-here----- */}
             <div className='about-content-area sm:w-[100%] sm:h-[100%] mx-auto sm:rounded-2xl sm:flex sm:justify-around sm:items-center'>
