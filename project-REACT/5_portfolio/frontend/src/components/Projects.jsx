@@ -2,7 +2,98 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Project</div>
+    <>
+      <div id="projects" className='project-section sm:w-[100%] sm:h-[105vh] mt-2 sm:flex sm:justify-center sm:items-center bg-white scroll-mt-24'>
+        <div className='project-container sm:w-[90%] sm:h-[90%] bg-black sm:rounded-2xl'>
+          {/* -----project-content-start-here----- */}
+          <div className='project-content-area sm:w-[100%] sm:h-[100%] mx-auto sm:rounded-2xl'>
+            <div className='project-title my-10 text-white'>
+              <p className='title text-center text-3xl pb-3 font-bold'>Projects & Assignments</p>
+              <p className='tagline text-center text-lg font-semibold'>Add line here...</p>
+            </div>
+            <div className="download-cv-div rounded-lg sm:py-0 py-3">
+                  <button
+                    type="button"
+                    className="px-10 py-3 text-lg font-medium text-black bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none rounded-lg text-center dark:hover:bg-blue-700"
+                  >
+                    Download CV
+                  </button>
+                </div>
+            {/* -----grid-start-here----- */}
+            <div className='project-card-section w-[95%] mx-auto'>
+              <div className='sm:grid sm:grid-rows-2 sm:grid-cols-3 grid grid-cols-1'>
+{/* -----project-card-start-here----- */}
+              <div className="w-[90%] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <img 
+                  className="w-full h-auto rounded-t-xl" 
+                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
+                  alt="Beautiful landscape with mountains and sunset"
+                />
+                <div className="p-4 md:p-5">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Card title</h3>
+                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a 
+                      className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" 
+                      href="https://example.com"
+                    >
+                      Go somewhere
+                    </a>
+                  </div>
+              </div>
+
+              <div className="w-[90%] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <img 
+                  className="w-full h-auto rounded-t-xl" 
+                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
+                  alt="Beautiful landscape with mountains and sunset"
+                />
+                <div className="p-4 md:p-5">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Card title</h3>
+                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a 
+                      className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" 
+                      href="https://example.com"
+                    >
+                      Go somewhere
+                    </a>
+                  </div>
+              </div>
+
+              <div className="w-[90%] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <img 
+                  className="w-full h-auto rounded-t-xl" 
+                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
+                  alt="Beautiful landscape with mountains and sunset"
+                />
+                <div className="p-4 md:p-5">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Card title</h3>
+                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <a 
+                      className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" 
+                      href="https://example.com"
+                    >
+                      <button>Go somewhere</button>
+                    </a>
+                    
+                  </div>
+              </div>
+
+{/* -----project-card-end-here----- */}
+
+              </div>
+            </div>
+            {/* -----grid-end-here----- */}
+          </div>
+          {/* -----project-content-end-here----- */}
+        </div>
+      </div>
+    </>
   )
 }
 
