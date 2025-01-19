@@ -3,90 +3,106 @@ import React from 'react'
 const Projects = () => {
   return (
     <>
-      <div id="projects" className='project-section sm:w-[100%] sm:h-[105vh] mt-2 sm:flex sm:justify-center sm:items-center bg-white scroll-mt-24'>
-        <div className='project-container sm:w-[90%] sm:h-[90%] bg-black sm:rounded-2xl'>
+      <div id="projects" className='project-section sm:w-[100%] sm:h-[87vh] mt-2 sm:flex sm:justify-center sm:items-center bg-white scroll-mt-24' >
+        <div className='project-container sm:w-[90%] sm:h-[95%] bg-black sm:rounded-2xl'>
           {/* -----project-content-start-here----- */}
           <div className='project-content-area sm:w-[100%] sm:h-[100%] mx-auto sm:rounded-2xl'>
-            <div className='project-title my-10 text-white'>
-              <p className='title text-center text-3xl pb-3 font-bold'>Projects & Assignments</p>
-              <p className='tagline text-center text-lg font-semibold'>Add line here...</p>
+            <div className='project-title my-6 sm:py-0 pt-5 text-white'>
+              <p className='title text-center sm:text-3xl text-2xl font-bold'>Projects & Assignments</p>
             </div>
-            <div className="download-cv-div rounded-lg sm:py-0 py-3">
-                  <button
-                    type="button"
-                    className="px-10 py-3 text-lg font-medium text-black bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none rounded-lg text-center dark:hover:bg-blue-700"
-                  >
-                    Download CV
-                  </button>
-                </div>
+            <div className="w-[98%] download-cv-div rounded-lg sm:py-0 my-2 text-right lg:block hidden">
+                <button
+                  type="button"
+                  className="px-10 py-3 text-lg font-medium text-black bg-white  focus:outline-none rounded-lg text-center"
+                >
+                  View All
+                </button>
+            </div>
             {/* -----grid-start-here----- */}
             <div className='project-card-section w-[95%] mx-auto'>
               <div className='sm:grid sm:grid-rows-2 sm:grid-cols-3 grid grid-cols-1'>
 {/* -----project-card-start-here----- */}
-              <div className="w-[90%] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+              <div className="w-[95%] sm:mb-0 mb-5 mx-auto flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                 <img 
                   className="w-full h-auto rounded-t-xl" 
                   src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
                   alt="Beautiful landscape with mountains and sunset"
                 />
                 <div className="p-4 md:p-5">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Card title</h3>
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Speech Text Convertor</h3>
                     <p className="mt-1 text-gray-500 dark:text-neutral-400">
-                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    A React-based application that seamlessly converts spoken words into text, enhancing accessibility and productivity.
                     </p>
-                    <a 
-                      className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" 
-                      href="https://example.com"
-                    >
-                      Go somewhere
-                    </a>
-                  </div>
-              </div>
-
-              <div className="w-[90%] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-                <img 
-                  className="w-full h-auto rounded-t-xl" 
-                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
-                  alt="Beautiful landscape with mountains and sunset"
-                />
-                <div className="p-4 md:p-5">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Card title</h3>
-                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
-                      Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                    <a 
-                      className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" 
-                      href="https://example.com"
-                    >
-                      Go somewhere
-                    </a>
-                  </div>
-              </div>
-
-              <div className="w-[90%] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-                <img 
-                  className="w-full h-auto rounded-t-xl" 
-                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
-                  alt="Beautiful landscape with mountains and sunset"
-                />
-                <div className="p-4 md:p-5">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Card title</h3>
-                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
-                      Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                    <a 
-                      className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" 
-                      href="https://example.com"
-                    >
-                      <button>Go somewhere</button>
-                    </a>
                     
+                    <div className='w-[200px] button-group flex justify-between'>
+                      <div className='live-demo-div'>
+                        <button className='mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none'>Live Demo</button>
+                      </div>
+                      <div className='github-div'>
+                      <button className='mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none'>Github Link</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div className="w-[95%] sm:mb-0 mb-5 mx-auto flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <img 
+                  className="w-full h-auto rounded-t-xl" 
+                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
+                  alt="Beautiful landscape with mountains and sunset"
+                />
+                <div className="p-4 md:p-5">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">ChatBot</h3>
+                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
+                    A JavaScript-based assistant using Google Gemini API, delivering intelligent, real-time responses for seamless and interactive communication.
+                    </p>
+                    
+                    <div className='w-[200px] button-group flex justify-between'>
+                      <div className='live-demo-div'>
+                        <button className='mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none'>Live Demo</button>
+                      </div>
+                      <div className='github-div'>
+                      <button className='mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none'>Github Link</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div className="w-[95%] mx-auto flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <img 
+                  className="w-full h-auto rounded-t-xl" 
+                  src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" 
+                  alt="Beautiful landscape with mountains and sunset"
+                />
+                <div className="p-4 md:p-5">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">Responsive Sidebar</h3>
+                    <p className="mt-1 text-gray-500 dark:text-neutral-400">
+                    A React-based dynamic sidebar with seamless navigation, optimized for all screen sizes and enhanced user experience.
+                    </p>
+                    
+                    <div className='w-[200px] button-group flex justify-between'>
+                      <div className='live-demo-div'>
+                        <button className='mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none'>Live Demo</button>
+                      </div>
+                      <div className='github-div'>
+                      <button className='mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none'>Github Link</button>
+                      </div>
+                    </div>
                   </div>
               </div>
 
 {/* -----project-card-end-here----- */}
-
               </div>
+
+              <div className="w-[98%] download-cv-div rounded-lg sm:py-0 py-5 text-center lg:hidden block">
+                <button
+                  type="button"
+                  className="px-10 py-3 text-lg font-medium text-black bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none rounded-lg text-center dark:hover:bg-blue-700"
+                  >
+                    View All
+                </button>
+              </div>
+
             </div>
             {/* -----grid-end-here----- */}
           </div>

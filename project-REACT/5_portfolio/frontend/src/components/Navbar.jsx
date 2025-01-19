@@ -37,6 +37,9 @@ const Navbar = () => {
                     <a className="nav-link" href="#projects">Projects</a>
                   </li>
                   <li className="nav-item text-white">
+                    <a className="nav-link" href="#education">Education</a>
+                  </li>
+                  <li className="nav-item text-white">
                     <a className="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
@@ -103,7 +106,7 @@ const Navbar = () => {
           {/* <div className="myName w-20 text-white my-4">
             <p className="text-lg font-semibold">Amandeep singh</p>
           </div> */}
-          <p className="text-lg font-semibold w-full text-center text-white my-4">Amandeep singh</p>
+          <p className="text-lg font-semibold w-full text-center text-white my-4">Portfolio</p>
           <ul className="flex flex-col items-center gap-6">
             <li className="nav-item text-white  cursor-pointer hover:bg-light-white rounded-md">
               <a className="nav-link" href="#home">Home</a>
@@ -116,6 +119,9 @@ const Navbar = () => {
             </li>
             <li className="nav-item text-white">
               <a className="nav-link" href="#projects">Projects</a>
+            </li>
+            <li className="nav-item text-white">
+              <a className="nav-link" href="#education">Education</a>
             </li>
             <li className="nav-item text-white">
               <a className="nav-link" href="#contact">Contact</a>
