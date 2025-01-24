@@ -1,80 +1,67 @@
 import React from 'react'
 
 const Education = () => {
+
+  
+
+  const eduToggle = () => {
+    alert("hello Education section");
+  }
+
+  const expToggle = () => {
+    alert("hello Experience section");
+  }
+
   return (
     <>
-        <div id="education" className='skills-section sm:w-[100%] sm:h-[105vh] mt-2 sm:flex sm:justify-center sm:items-center bg-black scroll-mt-24'>
-        <div className='skills-container sm:w-[90%] sm:h-[90%] bg-white sm:rounded-2xl'>
-          {/* -----skills-content-start-here----- */}
-          <div className='skills-content-area sm:w-[100%] sm:h-[100%] mx-auto sm:rounded-2xl'>
-            <div className='skills-title my-10'>
-              <p className='title text-center text-3xl pb-3 font-bold'>My Education</p>
-              <p className='tagline text-center text-lg font-semibold'>I create responsive and user-friendly websites that turn complex ideas into easy digital solutions.</p>
-            </div>
+        <div id="education" className='education-section sm:w-[100%] sm:h-[105vh] mt-2 sm:flex sm:justify-center sm:items-center bg-black scroll-mt-24'>
+        <div className='education-container sm:w-[90%] sm:h-[90%] bg-white sm:rounded-2xl'>
+          {/* -----education-content-start-here----- */}
+          <div className='education-content-area sm:w-[100%] sm:h-[100%] mx-auto sm:rounded-2xl'>
+{/* -----toggle-area-start-here----- */}
+                <div className='toggle-area my-10 w-[60%] py-2 flex justify-around mx-auto rounded-full bg-blue-50 shadow-2xl border-2 border-dashed border-black'>
+                    <div onClick={eduToggle} className={`toggle-education w-[45%] py-2 text-center rounded-full bg-black text-white cursor-pointer border-2 border-dashed border-red-600`}>
+                      <p className='text-2xl font-bold'>Education</p>
+                    </div>
+                    <div onClick={expToggle} className={`toggle-experience w-[45%] py-2 text-center rounded-full hover:bg-black hover:text-white duration-500 cursor-pointer border-2 border-dashed border-red-600`}>
+                      <p className='text-2xl font-bold'>Experience</p>
+                    </div>
+                </div>
+{/* -----toggle-area-end-here----- */}  
             {/* -----grid-start-here----- */}
-            <div className='skills-card-section w-[95%] mx-auto'>
-              <div className='sm:grid sm:grid-rows-2 sm:grid-cols-7 grid grid-cols-1'>
-                <div className='html card sm:w-40 w-44 my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML logo"/>
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>HTML</p>
-                </div>
-                <div className='css card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>CSS</p>
-                </div>
-                <div className='bootstrap card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap logo" />
-                  <p className='language-name text-[#6e4df3] text-center text-xl pt-5 font-bold'>Bootstrap</p>
-                </div>
-                <div className='tailwind card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwindcss logo" />
-                  <p className='language-name text-[#6e4df3] text-center text-xl pt-5 font-bold'>Tailwind CSS</p>
-                </div>
-                <div className='js card sm:w-40 w-44  my-4 border-2 p-3 sm:mx-0 mx-auto shadow-2xl border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>JavaScript</p>
-                </div>
-                <div className='react card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>React</p>
-                </div>
-                <div className='node card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node js logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>Node Js</p>
-                </div>
-                <div className='mongoDB card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>MongoDB</p>
-                </div>
-                <div className='express card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>Express</p>
-                </div>
-                <div className='sql card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>SQL</p>
-                </div>
-                <div className='typescript card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>TypeScript</p>
-                </div>
-                <div className='php card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>PHP</p>
-                </div>
-                <div className='jquery card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" alt="jQuery logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>jQuery</p>
-                </div>
-                <div className='canva card sm:w-40 w-44  my-4 p-3 sm:mx-0 mx-auto shadow-2xl border-2 border-solid border-black rounded-2xl'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" alt="Canva logo" />
-                  <p className='language-name text-[#6e4df3] text-center pt-5 text-xl font-bold'>Canva</p>
-                </div>
+            <div className='education-card-section w-[80%] mx-auto bg-[#E8F9FF] border-2 border-solid border-red-500'>
+              <div className='grid grid-rows-2 grid-cols-2 p-5'>
+
+                  <div className='w-[95%] my-2 border-2 border-solid border-red-500'>
+                    <p className='text-2xl mt-2 mx-6 font-bold'>Science Stream</p>
+                    <p className='text-lg mt-1 mx-6 font-medium'>Sain Dass A.S</p>
+                    <p className='bg-red-500 w-24 mt-1 ml-6 text-center text-white'>2008 - 2009</p>
+                    <p className='mt-2 mx-6'>I completed my Senior Secondary education in Science Stream (2008-2009) from Sain Dass A.S Senior Secondary School.</p>
+                  </div>
+                  <div className='w-[95%] my-2 border-2 border-solid border-red-500'>
+                    <p className='text-2xl mt-2 mx-6 font-bold'>BCA</p>
+                    <p className='text-lg mt-1 mx-6 font-medium'>Raipur</p>
+                    <p className='bg-red-500 w-24 mt-1 ml-6 text-center text-white'>2016 - 2019</p>
+                    <p className='mt-2 mx-6'>I completed my Bachelor of Computer Applications (BCA) from Raipur during 2016-2019, gaining in-depth knowledge of computer science concepts.</p>
+                  </div>
+                  <div className='w-[95%] my-2 border-2 border-solid border-red-500'>
+                    <p className='text-2xl mt-2 mx-6 font-bold'>PHP Course</p>
+                    <p className='text-lg mt-1 mx-6 font-medium'>Nugen</p>
+                    <p className='bg-red-500 w-24 mt-1 ml-6 text-center text-white'>2015 - 2016</p>
+                    <p className='mt-2 mx-6'>I completed a PHP backend development course at Nugen from 2015-2016, enhancing my skills in dynamic web application development.</p>
+                  </div>
+                  <div className='w-[95%] my-2 border-2 border-solid border-red-500'>
+                    <p className='text-2xl mt-2 mx-6 font-bold'>MERN Full Stack Course</p>
+                    <p className='text-lg mt-1 mx-6 font-medium'>Dice Academy</p>
+                    <p className='bg-red-500 w-24 mt-1 ml-6 text-center text-white'>2024 - 2025</p>
+                    <p className='mt-2 mx-6'>I completed a MERN Full Stack Development course at Dice Academy from 2024-2025, mastering modern web development technologies, API integration, and frontend design.</p>
+                  </div>
+
               </div>
             </div>
             {/* -----grid-end-here----- */}
           </div>
-          {/* -----skills-content-end-here----- */}
+          {/* -----education-content-end-here----- */}
         </div>
       </div>
     </>
