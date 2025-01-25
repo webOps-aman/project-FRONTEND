@@ -99,9 +99,9 @@ const Education = () => {
                 </p>
               </div>
               <div className="w-full shadow-xl rounded-lg p-4">
-                <p className="text-xl sm:text-2xl font-bold">xyz</p>
-                <p className="text-sm sm:text-lg font-medium mt-1">xyz</p>
-                <p className="bg-red-500 w-20 sm:w-24 mt-1 text-center text-white rounded-full">2024 - 2025</p>
+                <p className="text-xl sm:text-2xl font-bold">...</p>
+                <p className="text-sm sm:text-lg font-medium mt-1">...</p>
+                <p className="bg-red-500 w-20 sm:w-24 mt-1 text-center text-white rounded-full">.....</p>
                 <p className="text-sm sm:text-base mt-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, vero iste itaque dolorem quibusdam obcaecati quod ipsa ex saepe quo error.
                 </p>

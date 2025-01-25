@@ -40,12 +40,14 @@ const HeroSection = () => {
                   </button>
                 </div>
                 <div className="hire-me-div">
+                  <a href="#contact">
                   <button
                     type="button"
                     className="w-full px-10 py-3 text-lg font-medium text-black bg-white hover:bg-blue-500 hover:text-white focus:ring-4 focus:outline-none rounded-lg text-center"
                   >
                     Hire Me
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
