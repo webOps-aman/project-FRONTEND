@@ -7,7 +7,8 @@ const HeroSection = () => {
         id="home"
         className="hero-section w-[100%] sm:h-[87vh] mt-[93px] scroll-mt-[93px]"
         style={{
-          backgroundImage: "url('/images/background-4.jpg')",
+          // backgroundImage: "url('/images/background-4.jpg')",
+          backgroundImage: "url('/images/background-14.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

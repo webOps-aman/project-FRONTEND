@@ -1,6 +1,9 @@
 import React from 'react';
 
+
 const Skills = () => {
+
+
   return (
     <>
       <div id="skills" className='skills-section sm:w-[100%] sm:h-[105vh] mt-2 sm:flex sm:justify-center sm:items-center bg-black scroll-mt-24'>
