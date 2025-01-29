@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 const Skills = () => {
 
+  const getData = async () => {
+    try {
+      const res = await fetch('/api/skill-api.json', {
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+      });
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.error('Error fetching skills data:', error);
+    }
+  };
+  
+
+  useEffect(() => {
+    getData();
+  },[])
 
   return (
     <>
