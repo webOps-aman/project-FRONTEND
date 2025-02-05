@@ -1,4 +1,4 @@
-[
+export const mySkills = [
     {
         "id": "1",
         "name": "HTML",
