@@ -12,12 +12,13 @@ const Projects = () => {
               <p className='title text-center sm:text-3xl text-2xl font-bold'>Projects & Assignments</p>
             </div>
             <div className="w-[98%] download-cv-div rounded-lg sm:py-0 my-2 text-right lg:block hidden">
-                <button
-                  type="button"
-                  className="px-10 py-3 text-lg font-medium text-black bg-white  focus:outline-none rounded-lg text-center"
-                >
-                  View All
-                </button>
+            <button
+  type="button"
+  className="px-10 py-3 text-lg font-medium text-black bg-white focus:outline-none rounded-lg text-center shake-x"
+>
+  View All
+</button>
+
             </div>
             {/* -----grid-start-here----- */}
             <div className='project-card-section w-[95%] mx-auto'>
@@ -52,12 +53,12 @@ const Projects = () => {
               </div>
 
               <div className="w-[98%] download-cv-div rounded-lg sm:py-0 py-5 text-center lg:hidden block">
-                <button
-                  type="button"
-                  className="px-10 py-3 text-lg font-medium text-black bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none rounded-lg text-center dark:hover:bg-blue-700"
-                  >
-                    View All
-                </button>
+              <button
+  type="button"
+  className="px-10 py-3 text-lg font-medium text-black bg-white focus:outline-none rounded-lg text-center shake-x"
+>
+  View All
+</button>
               </div>
 
             </div>
