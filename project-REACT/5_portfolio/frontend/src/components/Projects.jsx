@@ -11,15 +11,7 @@ const Projects = () => {
             <div className='project-title my-6 sm:py-0 pt-5 text-white'>
               <p className='title text-center sm:text-3xl text-2xl font-bold'>Projects & Assignments</p>
             </div>
-            <div className="w-[98%] download-cv-div rounded-lg sm:py-0 my-2 text-right lg:block hidden">
-            <button
-  type="button"
-  className="px-10 py-3 text-lg font-medium text-black bg-white focus:outline-none rounded-lg text-center shake-x"
->
-  View All
-</button>
-
-            </div>
+            
             {/* -----grid-start-here----- */}
             <div className='project-card-section w-[95%] mx-auto'>
               <div className='sm:grid sm:grid-rows-2 sm:grid-cols-3 grid grid-cols-1'>
@@ -57,7 +49,7 @@ const Projects = () => {
   type="button"
   className="px-10 py-3 text-lg font-medium text-black bg-white focus:outline-none rounded-lg text-center shake-x"
 >
-  View All
+  Show
 </button>
               </div>
 
