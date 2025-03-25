@@ -5,7 +5,7 @@ export const myProjects = [
         description: "A React-based application that seamlessly converts spoken words into text, enhancing accessibility and productivity.",
         image: "https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80",
         demoLink: "",
-        githubLink: ""
+        githubLink: "https://github.com/webOps-aman/project-FRONTEND/tree/main/project-REACT/3_speech_recognition/frontend"
     },
     {
         id: "2",
