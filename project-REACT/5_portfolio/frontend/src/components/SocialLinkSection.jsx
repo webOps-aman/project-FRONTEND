@@ -11,16 +11,24 @@ const SocialLinkSection = () => {
             <div className='social-links sm:text-xl text-black sm:w-[30%] sm:mt-0 mt-3'>
                 <ul className='links flex justify-evenly'>
                     <li className='links-items'>
-                        <a href="#facebook">facebook</a>
+                        <a
+                        className="nav-link"
+                        href="https://github.com/webOps-aman"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
                     </li>
                     <li className='links-items'>
-                        <a href="#google">google</a>
-                    </li>
-                    <li className='links-items'>
-                        <a href="#twitter">twitter</a>
-                    </li>
-                    <li className='links-items'>
-                        <a href="#github">github</a>
+                        <a
+                        className="nav-link"
+                        href="https://www.linkedin.com/in/amandeep-singh-93739322b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        LinkedIn
+                        </a>
                     </li>
                 </ul>
             </div>
