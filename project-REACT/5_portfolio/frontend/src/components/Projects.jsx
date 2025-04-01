@@ -21,7 +21,8 @@ const Projects = () => {
                 {myProjects.map((project) => (
                   <div key={project.id} className="w-[95%] sm:my-4 mb-5 mx-auto flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                     <img
-                      className="w-full h-auto rounded-t-xl"
+                      className="w-full h-48 rounded-t-xl object-contain"
+                      // className="w-full h-48 object-cover rounded-t-xl"
                       src={project.image}
                       alt={project.name}
                     />
@@ -36,9 +37,8 @@ const Projects = () => {
                             target="_blank" 
                             rel="noopener noreferrer"
                           >
-                            <button className="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                              Live Demo
-                            </button>
+                            <button className={`${project.demoLinkBtn ? "mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" : "hidden"}`}>Live Demo</button>
+
                           </a>
                         </div>
                         <div className="github-div">
