@@ -44,6 +44,15 @@ export const myProjects = [
         demoLinkBtn: false,
         githubLink: "https://github.com/webOps-aman/project-MERN/tree/main/shoppingApp"
     },
+    {
+        id: "6",
+        name: "Quiz App",
+        description: "A React quiz app with multiple-choice questions, real-time score tracking, interactive UI, and dynamic feedback for correct and incorrect answers.",
+        image: "images/quizzApp-image.jpg",
+        demoLink: "https://mini-quiz-app-react.netlify.app/",
+        demoLinkBtn: true,
+        githubLink: "https://github.com/webOps-aman/quizApp/tree/main/project/frontend"
+    },
     
     
 ];

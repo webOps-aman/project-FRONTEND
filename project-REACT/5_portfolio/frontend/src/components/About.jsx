@@ -26,7 +26,7 @@ const About = () => {
                     I can develop that help people
                   </p>
                   <p className="text-white sm:text-2xl text-lg font-medium leading-8">
-                    I am a Full Stack Developer with 1.5 years of experience in PHP development and a keen interest in the MERN stack. While I am a fresher in MERN, I have a solid foundation in web development and have been actively learning and building projects to strengthen my skills in React, Node.js, Express, and MongoDB. I am eager to contribute to impactful projects and grow as a MERN stack developer.
+                  Seeking a MERN Stack Developer role where I can apply my skills in React, Node.js, Express, and MongoDB to build efficient and user-centric applications. With 1.7 years of experience in PHP development, specializing in scalable web applications, I have transitioned into the MERN stack driven by my passion for modern JavaScript technologies. While new to MERN, I have a strong web development foundation and have been actively working on projects to enhance my expertise. My goal is to specialize and grow exclusively in the MERN stack domain while contributing to impactful real-world applications.
                   </p>
                 </div>
               </div>

@@ -33,12 +33,14 @@ const HeroSection = () => {
 
               <div className="button-group sm:w-[52%] mt-10 sm:flex sm:justify-between">
                 <div className="download-cv-div rounded-lg sm:py-0 py-3">
-                  <button
-                    type="button"
-                    className="w-full px-10 py-3 text-lg font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none rounded-lg text-center dark:hover:bg-blue-700"
-                  >
-                    Download CV
-                  </button>
+                <a 
+                href="https://github.com/webOps-aman" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full"
+                >
+                <button type="button" className="w-full px-10 py-3 text-lg font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none rounded-lg text-center dark:hover:bg-blue-700">Github Link</button></a>
+
                 </div>
                 <div className="hire-me-div">
                   <a href="#contact">
